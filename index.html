@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chance Hart UX Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Chance Larson</h1>
+  <p>UX and Computer Science student </p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+  </nav>
+</header>
+<main>
+  <section id="about">
+    <h2>About me</h2>
+    <p>Hello, I am Chance, a computer science and user experience student at Montana State University in Bozeman, Montana. I care a lot about how people actually feel when they use technology, not just whether the code runs. I like taking messy, real life problems and turning them into clear, calm screens that make sense to the person on the other side.</p>
+    <p>Most of my work lives somewhere between design and development. I enjoy talking with users, sketching ideas on paper, building simple prototypes, and then wiring everything up with real data. When something I built helps someone feel less stressed or more in control, that is when the work feels worth it.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills and experience</h2>
+    <ul>
+      <li><strong>User research.</strong> Interviews, surveys, empathy maps, basic journey mapping, building personas from real quotes and patterns.</li>
+      <li><strong>Design and prototyping.</strong> Adobe XD, Figma, Adobe Express, mind maps, simple storyboards, low and high fidelity prototypes.</li>
+      <li><strong>Development.</strong> Python, Java, Haskell, SQL, HTML and CSS, enough to move from a sketch to something that feels alive in a browser.</li>
+      <li><strong>Process and tools.</strong> Git and GitHub, Google Forms, simple black box testing, UML diagrams, and writing clear test plans.</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <!-- Project 1: UX Design Course Project -->
+    <article>
+      <h3>UX design course project, MSU parking experience</h3>
+
+      <h4>The problem</h4>
+      <p>Finding parking on campus is a constant headache for both students and staff at Montana State. People spend a lot of time circling lots, show up late, and start their day already stressed. Existing options, like permits or static space counters at other schools, do not give clear information that updates in real time. The real pain is uncertainty. No one knows where they will park, how far they will have to walk, or whether the lot they used yesterday will work again today.</p>
+
+      <h4>Tools I used</h4>
+      <p>For this project I used interviews, surveys, empathy maps, a detailed persona, a business model canvas, a digital mind map in Coggle, paper sketches, and a high fidelity prototype in Figma. I also wrote out how I applied usability heuristics and basic user experience laws to keep every design choice grounded in something more than guesswork.</p>
+
+      <h4>Discovery and design process</h4>
+      <p>I started with five interviews with people connected to Montana State, a mix of students and staff between twenty and twenty six, both men and women. I asked about how they look for parking now, how long it usually takes, when they feel the most stressed, and what a good morning would look like instead. From these notes I built empathy maps and a persona named Leah, a staff member who commutes most days and just wants a calm, predictable start to her shift.</p>
+      <p>Using Coggle, I turned those pain points into a mind map with branches for technology, user experience, community ideas, cost, and future possibilities. That led to ideas like live lot updates, gentle navigation help, event modes for game days, student to student spot sharing, and reward systems for good parking behavior. On paper I sketched out a simple home screen that lists lots with space counts and a profile screen that remembers where you parked and tracks points.</p>
+
+      <h4>Prototypes and user experience</h4>
+      <p>Once the sketches felt right, I rebuilt the flows in Figma. I used Montana State colors with simple cards and clear typography. I added small animated dots to show that lot data is fresh, and smooth transitions between screens so the prototype feels close to a real app. The interface centers on one clear job, helping someone decide where to park, instead of trying to do everything at once.</p>
+      <p>
+        <a
+          class="btn"
+          href="https://number-type-67290587.figma.site"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open the interactive prototype
+        </a>
+      </p>
+
+      <h4>Usability and heuristics</h4>
+      <p>While building the prototype I checked each screen against Nielsen heuristics and a few key user experience laws. The app always shows where you are and when data was last refreshed. It uses familiar language and icons that match what people already see around campus. Important actions sit near the bottom of the screen where your thumb rests, and there are only a few choices at a time so decisions stay quick. Error states use plain language and explain how to get back on track instead of blaming the user.</p>
+
+      <h4>Outcome and what I learned</h4>
+      <p>The final prototype does not solve parking on its own, but it turns a vague idea into something testable. Working through each stage made me focus less on features and more on feelings. I learned how far a simple, predictable flow and clear feedback can go in lowering everyday stress, especially in a place like a frozen winter parking lot.</p>
+    </article>
+
+    <!-- Project 2: GradeSaver App -->
+    <article>
+      <h3>GradeSaver app, helping students see their grades clearly</h3>
+
+      <h4>The problem</h4>
+      <p>Students check their grades all the time, but most tools stop at showing a number. When you are halfway through a semester, what you really want to know is simple. Am I passing, what do I need on the next assignment, and what happens if I completely bomb the final. I created GradeSaver for students who want a clear picture of where they stand and what they need to do next in order to pass a class or hit a goal.</p>
+
+      <h4>Tools I used</h4>
+      <p>I wrote a design specification for GradeSaver that described the product vision, the main user story, and how the system should behave. I built UML diagrams, including a class diagram with pieces like class, grading category, grade calculator, grade input, grade predictions, and a future grade simulator. I also worked with sequence diagrams that show how a student interacts with the system step by step. On the testing side I used a set of black box test plans that relied on techniques like equivalence classes, boundary values, and decision tables to keep coverage reasonable while still meaningful.</p>
+
+      <h4>Discovery and design process</h4>
+      <p>I started by writing out who GradeSaver is for. In the design spec I described it as a friendly platform for students from high school through college who want to track their progress and see what grade they need on remaining work to pass. From there I listed out the main concepts students already think about, such as classes, grading categories, individual assignments, current grades, and target grades.</p>
+      <p>The class diagram grew directly out of these ideas. A class object holds grading categories and grades. A grading category includes a name, a weight, and a list of items. A grade calculator takes this data and computes the current grade, while grade predictions and the future grade simulator help explore what happens under different outcomes. Laying it out this way kept the design close to how a student already organizes a class in their head.</p>
+      <p>I then used sequence diagrams to walk through key flows from the student point of view. One diagram shows a student defining grading categories and a scale for a class. Another shows the student entering current grades, updating them, and asking the system to calculate the final grade and the required scores on remaining work. A third diagram shows saving and loading class data through a data storage component, so the student does not lose their work between sessions.</p>
+
+      <h4>User testing</h4>
+      <p>To check that the design would work in practice, I built a simple version of the app and paired it with a test plan. The plan focused on basic but important tasks. Register a class and record some grades. Add new tasks with titles, weights, and scores. Save more than one class and make sure each set of grades stays separate and can be viewed later. For each test I wrote down the preconditions, the steps a student should follow, the expected result, and the actual result.</p>
+      <p>These tests uncovered a few real issues. Early on, students could not add new classes outside of a specific course that I had hard coded. In another case, they could only view grades for one class even after entering data for a second class. Having those failures written down made it much easier to see where the data model and interface did not yet match the goals in the design spec.</p>
+
+      <h4>Usability and heuristics</h4>
+      <p>From the beginning I wanted GradeSaver to feel much simpler than a cluttered spreadsheet. The product vision talks about a clean, desirable, self organizing design, so I leaned on basic usability heuristics as a checklist. The app gives clear feedback when a class or grade is saved. It uses terms like class, assignment, category, and weight instead of abstract labels. It lets students update grades and adjust weights without forcing them through long forms. I tried to prevent errors by guiding input for things like percentage weights and by keeping choices small and obvious at each step.</p>
+
+      <h4>Outcome and what I learned</h4>
+      <p>GradeSaver taught me how to move from a short product vision to a real design and then to concrete tests. Writing the diagrams forced me to think through how data flows between pieces. Building the test plan showed me how vague requirements, like a promise that commands will constantly improve, are almost impossible to measure without more detail. Most of all, this project reminded me that even a simple grade calculator is about peace of mind. When the interface is clear and the numbers make sense, students can spend less time doing mental math and more time actually working on their classes.</p>
+    </article>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2025 Chance Larson, UX and CS student at MSU</p>
+  <p>Email: chance.larson@student.montana.edu</p>
+</footer>
+</body>
+</html>
